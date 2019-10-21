@@ -1,0 +1,17 @@
+body {
+    float: center;
+    text-align: center;
+    /* background-image: url("assets/images/istockphoto-695641936-612x612.jpg"); */
+    background: linear-gradient(black, gray);
+}
+
+#box-1 {
+    padding: 20px;
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    background: white;
+    border: black;
+    border-width: 3px;
+}
