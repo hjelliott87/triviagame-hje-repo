@@ -21,7 +21,7 @@ var answers7 = ["Liechtenstein", "Bhutan", "United States of America", "Comoros"
 var answers8 = ["Whale", "Horse", "Bear", "Bison"];
 var answers9 = ["Texas", "Alaska", "California", "New York"];
 var answers10 = ["BEER!!!", "Adulting", "So. Heavy.", "Because Boobs"];
-var answers11 = ["The Game", "Make Your Move", "Athena", "Over The Hedge"];
+var answers11 = ["Dirty Dancin' (2018)", "Make Your Move", "Footloose", "High School Musical"];
 var answers12 = ["The universe explodes!", "Instant death!", "All hell breaks loose!", "0 divided by 0 returns 0."];
 
 var answers = [answers1[2], 
@@ -50,6 +50,8 @@ var intervalId;
 var clockRunning = false;
 var time = 0;
 
+hideStuff();
+
 $(document).ready(function() {
 
   $("#start").on("click", function() {
@@ -57,12 +59,6 @@ $(document).ready(function() {
     }, 60000);
     for (var i = 0; i < questions.length; i++) {
       for (var j = 0; j <= questions[0]; j++) {
-        $("#block1").text(questions[0]);
-        $("#answer1-1").text(answers1[0]);
-        $("#answer1-2").text(answers1[1]);
-        $("#answer1-3").text(answers1[2]);
-        $("#answer1-4").text(answers1[3]);
-
         $("#answer1-1").on("click", answers1[0]);
         $("#answer1-2").on("click", answers1[1]);
         $("#answer1-3").on("click", answers1[2]);
@@ -224,7 +220,8 @@ $(document).ready(function() {
 });
 
 $("#finish").on("click", function() {
-
+  $("#correct").text(correct);
+  $("#wrong").text(wrong);
   clearTimeout(endOfGame);
 });
 function count() {
