@@ -153,8 +153,8 @@ $("#finish").on("click", function() {
   $("#wrong").text(wrong);
   clearTimeout(endOfGame);
   hideStuff = "block";
-  console.log(correct);
-  console.log(wrong);
+  // console.log(correct);
+  // console.log(wrong);
 });
 
 function hideStuff() {
